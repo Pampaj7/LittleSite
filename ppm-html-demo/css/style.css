@@ -1,0 +1,226 @@
+/*general rules*/
+* {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    font-family: "Helvetica Neue", Helvetica, "sans-serif";
+    font-size: 14px;
+    line-height: 1.4em;
+    color: #333;
+    background-color: #ffffff;
+
+}
+
+/*end general*/
+
+/*navigation rules*/
+.navbar {
+    background-color: #222222;
+    min-height: 50px;
+    border-bottom: 1px solid #080808;
+}
+
+.container {
+    width: 90%;
+    margin: 0 auto;
+}
+
+#menu-primary li {
+    float: left;
+    min-height: 50px;
+
+}
+
+#menu-primary li a:link,
+#menu-primary li a:visited,
+#menu-secondary li a:link,
+#menu-secondary li a:visited {
+    color: #9d9d9d;
+    text-decoration: none;
+    padding: 15px 15px 0px 10px;
+    display: block;
+}
+
+#menu-primary li a:hover,
+#menu-secondary li a:hover {
+    color: white;
+}
+
+#menu-primary li a.brand {
+    font-size: 140%;
+    padding: 12px 15px 0px 28px;
+    background-image: url("../images/glyphicons-2-leaf-gray.png");
+    background-repeat: no-repeat;
+    background-size: 26px 23px;
+    background-position: 0 12px;
+
+}
+
+#menu-primary li a.brand:hover {
+    background-image: url("../images/glyphicons-2-leaf-white.png");
+}
+
+#menu-secondary {
+    position: absolute;
+    right: 0;
+}
+
+#menu-primary li.active a {
+    color: #ffffff;
+}
+
+
+/*end navigation*/
+/*content rules*/
+
+h1.title {
+    font-size: 36px;
+    font-weight: 500;
+    padding-bottom: 9px;
+    margin: 40px 0px 20px 0px;
+    border-bottom: 1px solid #eeeeee;
+}
+
+h1.title span {
+    font-size: 65%;
+    font-weight: 400;
+    color: #777777;
+}
+
+.portfolio-item {
+    float: left;
+    width: 47%;
+}
+
+.responsive-image {
+    max-width: 100%;
+}
+
+.portfolio-item:nth-child(even) {
+    margin-right: 6%;
+}
+
+h3 a:link,
+h3 a:visited,
+h3 a:hover {
+    color: #333ab7;
+    font-size: 24px;
+    text-decoration: none;
+    font-weight: 500;
+}
+
+h3 a:hover {
+    text-decoration: underline;
+}
+
+.portfolio-item h3 {
+    margin: 20px 0 20px 0;
+}
+
+.portfolio-item p {
+    margin: 0 0 40px 0;
+}
+
+.pagination {
+    text-align: center;
+    clear: both;
+}
+
+.pagination li {
+    display: inline-block;
+}
+
+.pagination li a {
+    display: block;
+    padding: 6px 12px;
+    color: #337ab7;
+    text-decoration: none;
+    border: 1px, solid #dddddd;
+}
+
+.pagination li:first-child a {
+    border-radius: 4px 0 0 4px;
+}
+
+.pagination li:last-child a {
+    border-radius: 0 4px 4px 0px;
+}
+
+/*end content rules*/
+
+/*start footer rules*/
+
+footer {
+    padding-top: 100px;
+    clear: both;
+
+}
+
+.footer-blurp {
+    text-align: center;
+    background-color: lightskyblue;
+    min-height: 400px;
+
+}
+
+.footer-blurp-item {
+    float: left;
+    padding-top: 30px;
+    width: 28%;
+
+}
+
+.footer-blurp-item:nth-child(2) {
+    padding-left: 8%;
+    padding-right: 8%;
+}
+
+.circle-image {
+    border-radius: 100%;
+}
+
+.footer-blurp h3 {
+    color: midnightblue;
+    font-size: 24px;
+    margin: 20px 0 20px 0;
+    font-weight: 500;
+}
+
+/*end footer rules*/
+
+/*start mobile rules*/
+.toggle-menu {
+    display: block;
+    width: 28px;
+    height: 28px;
+    position: absolute;
+    top: 14px;
+    right: 10px;
+}
+
+.navbar span,
+.navbar span::before,
+.navbar span::after {
+    position: relative;
+    display: block;
+    width: 100%;
+    height: 2px;
+    background-color: white;
+    border-radius: 2px;
+
+}
+
+.navbar span::before, .navbar span::after {
+    content: "";
+    position: absolute;
+    left: 0;
+    top: 9px;
+}
+
+.navbar span::after {
+    top: 18px;
+}
+
+/*end mobile rules*/
